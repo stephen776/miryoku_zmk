@@ -1,6 +1,9 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+// make mouse keys work for now
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR 
+
 // Mods
 // QWERTY
 // Re-arrange the thumb cluster to have SPACE on right
