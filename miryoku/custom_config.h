@@ -2,7 +2,7 @@
 // https://github.com/manna-harbour/miryoku
 
 // make mouse keys work for now
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR 
+// #define MIRYOKU_KLUDGE_MOUSEKEYSPR 
 
 // Mods
 // QWERTY
