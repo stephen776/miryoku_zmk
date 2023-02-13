@@ -24,7 +24,7 @@ U_NP,              U_NP,              &kp ESC,           &kp RET,           &kp 
 
 
 // BUTTON
-#define MIRYOKU_ALTERNATIVES_BUTTON \
+#define MIRYOKU_LAYER_BUTTON \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NU,              U_NU,              &kp LGUI,          &kp LALT,          &kp LCTRL          &kp LSHFT,          \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
