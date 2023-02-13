@@ -4,6 +4,11 @@
 // make mouse keys work for now
 // #define MIRYOKU_KLUDGE_MOUSEKEYSPR 
 
+// Nice View Config
+&nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
 // Mods
 // QWERTY
 // Re-arrange the thumb cluster to have SPACE on right
