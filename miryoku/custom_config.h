@@ -9,6 +9,9 @@
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
 
+// mac clipboard
+#define MIRYOKU_CLIPBOARD_MAC
+
 // Mods
 // QWERTY
 // Re-arrange the thumb cluster to have SPACE on right
