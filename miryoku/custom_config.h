@@ -1,6 +1,8 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#include <custom_behaviors.dtsi>
+
 // make mouse keys work for now
 // #define MIRYOKU_KLUDGE_MOUSEKEYSPR 
 
@@ -18,12 +20,16 @@
 // Re-arrange homerow mods for pinky SHIFT (SCAG)
 // VIM style arrows on nav
 
+// positional hold tap
+#define U_LPHT(MOD, TAP) &lh_pht MOD TAP
+#define U_RPHT(MOD, TAP) &rh_pht MOD TAP
+
 // BASE
 #define MIRYOKU_LAYER_BASE \
-&kp Q,             &kp W,             &kp E,               &kp R,               &kp T,               &kp Y,              &kp U,               &kp I,             &kp O,             &kp P,                \
-U_MT(LSHFT, A),    U_MT(LCTRL, S),    U_MT(LALT, D),       U_MT(LGUI, F),       &kp G,               &kp H,              U_MT(LGUI, J),       U_MT(LALT, K),     U_MT(LCTRL, L),    U_MT(LSHFT, SQT),     \
-U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,               &kp V,               &kp B,               &kp N,              &kp M,               &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),  U_LT(U_NAV, SPACE),  U_LT(U_MOUSE, TAB),  U_LT(U_SYM, RET),   U_LT(U_NUM, BSPC),   U_LT(U_FUN, DEL),  U_NP,              U_NP
+&kp Q,               &kp W,               &kp E,                 &kp R,                 &kp T,               &kp Y,              &kp U,                 &kp I,               &kp O,               &kp P,                \
+U_LPHT(LSHFT, A),    U_LPHT(LCTRL, S),    U_LPHT(LALT, D),       U_LPHT(LGUI, F),       &kp G,               &kp H,              U_RPHT(LGUI, J),       U_RPHT(LALT, K),     U_RPHT(LCTRL, L),    U_RPHT(LSHFT, SQT),     \
+U_LT(U_BUTTON, Z),   U_LPHT(RALT, X),     &kp C,                 &kp V,                 &kp B,               &kp N,              &kp M,                 &kp COMMA,           U_RPHT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,                U_NP,                U_LT(U_MEDIA, ESC),    U_LT(U_NAV, SPACE),    U_LT(U_MOUSE, TAB),  U_LT(U_SYM, RET),   U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                U_NP
 
 
 // BUTTON
