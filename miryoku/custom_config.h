@@ -1,7 +1,7 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#include <custom_behaviors.dtsi>
+#include "custom_behaviors.dtsi"
 
 // make mouse keys work for now
 // #define MIRYOKU_KLUDGE_MOUSEKEYSPR 
