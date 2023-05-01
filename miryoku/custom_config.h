@@ -6,10 +6,10 @@
 // make mouse keys work for now
 // #define MIRYOKU_KLUDGE_MOUSEKEYSPR 
 
-// Nice View Config
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+// // Nice View Config
+// &nice_view_spi {
+//     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+// };
 
 // mac clipboard
 #define MIRYOKU_CLIPBOARD_MAC
